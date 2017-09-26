@@ -5,21 +5,25 @@ using UnityEngine;
 //put on trigger to open door
 public class BubDoorTrigger : MonoBehaviour {
 
-	public GameObject glassDoor;
+	//public GameObject glassDoor;
 	public GameObject thirdWeight;
-	Vector2 doorPos;
+	//Vector2 doorPos;
+
+	public GameObject blocker;
 
 
 	void Start() {
-		doorPos = glassDoor.transform.position;
+		//doorPos = glassDoor.transform.position;
 	}
 
 	void OnTriggerEnter(Collider c) {
 		if (c.gameObject == thirdWeight) {
-			DoorUp ();
+			//DoorUp ();
+			blocker.SetActive(false);
 		}
 	}
 
+	/*
 	void DoorUp() {
 		Debug.Log ("uped");
 		Debug.Log (doorPos.y);
@@ -29,4 +33,5 @@ public class BubDoorTrigger : MonoBehaviour {
 			Debug.Log ("hi");
 		}
 	}
+	*/
 }
