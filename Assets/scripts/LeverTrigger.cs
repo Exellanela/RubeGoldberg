@@ -5,7 +5,6 @@ using UnityEngine;
 public class LeverTrigger : MonoBehaviour {
 
 	public GameObject lever1;
-	public GameObject lever2;
 
 	Rigidbody lev1RB;
 
